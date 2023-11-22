@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet8" targetNamespace="http://tempuri.org/DataSet8.xsd" xmlns:mstns="http://tempuri.org/DataSet8.xsd" xmlns="http://tempuri.org/DataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Settings)" PropertyReference="ApplicationSettings.BD_1_1_n.Properties.Settings.GlobalReference.Default.ConnectionString1" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_721TableAdapter" GeneratorDataComponentClassName="v_721TableAdapter" Name="v_721" UserDataComponentName="v_721TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "Назва категорії", "Кількість перевищень" FROM "public"."v_721"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Назва категорії" DataSetColumn="Назва категорії" />
+              <Mapping SourceColumn="Кількість перевищень" DataSetColumn="Кількість перевищень" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet8" msprop:Generator_DataSetName="DataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_721" msprop:Generator_RowEvHandlerName="v_721RowChangeEventHandler" msprop:Generator_RowDeletedName="v_721RowDeleted" msprop:Generator_RowDeletingName="v_721RowDeleting" msprop:Generator_RowEvArgName="v_721RowChangeEvent" msprop:Generator_TablePropName="v_721" msprop:Generator_RowChangedName="v_721RowChanged" msprop:Generator_RowChangingName="v_721RowChanging" msprop:Generator_TableClassName="v_721DataTable" msprop:Generator_RowClassName="v_721Row" msprop:Generator_TableVarName="tablev_721" msprop:Generator_UserTableName="v_721">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Назва_x0020_категорії" msprop:Generator_ColumnPropNameInRow="Назва_категорії" msprop:Generator_ColumnPropNameInTable="Назва_категоріїColumn" msprop:Generator_ColumnVarNameInTable="columnНазва_категорії" msprop:Generator_UserColumnName="Назва категорії" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Кількість_x0020_перевищень" msprop:Generator_ColumnPropNameInRow="Кількість_перевищень" msprop:Generator_ColumnPropNameInTable="Кількість_перевищеньColumn" msprop:Generator_ColumnVarNameInTable="columnКількість_перевищень" msprop:Generator_UserColumnName="Кількість перевищень" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

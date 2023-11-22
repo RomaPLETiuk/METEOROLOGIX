@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.BD_1_1_n.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="measurement_reportTableAdapter" GeneratorDataComponentClassName="measurement_reportTableAdapter" Name="measurement_report" UserDataComponentName="measurement_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "measured_unit_title", "max_value", "min_value", "avg_value", "measured_unit_unit" FROM "public"."measurement_report"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="measured_unit_title" DataSetColumn="measured_unit_title" />
+              <Mapping SourceColumn="max_value" DataSetColumn="max_value" />
+              <Mapping SourceColumn="min_value" DataSetColumn="min_value" />
+              <Mapping SourceColumn="avg_value" DataSetColumn="avg_value" />
+              <Mapping SourceColumn="measured_unit_unit" DataSetColumn="measured_unit_unit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="measurement_report" msprop:Generator_RowEvHandlerName="measurement_reportRowChangeEventHandler" msprop:Generator_RowDeletedName="measurement_reportRowDeleted" msprop:Generator_RowDeletingName="measurement_reportRowDeleting" msprop:Generator_RowEvArgName="measurement_reportRowChangeEvent" msprop:Generator_TablePropName="measurement_report" msprop:Generator_RowChangedName="measurement_reportRowChanged" msprop:Generator_RowChangingName="measurement_reportRowChanging" msprop:Generator_TableClassName="measurement_reportDataTable" msprop:Generator_RowClassName="measurement_reportRow" msprop:Generator_TableVarName="tablemeasurement_report" msprop:Generator_UserTableName="measurement_report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="measured_unit_title" msprop:Generator_ColumnPropNameInRow="measured_unit_title" msprop:Generator_ColumnPropNameInTable="measured_unit_titleColumn" msprop:Generator_ColumnVarNameInTable="columnmeasured_unit_title" msprop:Generator_UserColumnName="measured_unit_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="max_value" msprop:Generator_ColumnPropNameInRow="max_value" msprop:Generator_ColumnPropNameInTable="max_valueColumn" msprop:Generator_ColumnVarNameInTable="columnmax_value" msprop:Generator_UserColumnName="max_value" type="xs:double" minOccurs="0" />
+              <xs:element name="min_value" msprop:Generator_ColumnPropNameInRow="min_value" msprop:Generator_ColumnPropNameInTable="min_valueColumn" msprop:Generator_ColumnVarNameInTable="columnmin_value" msprop:Generator_UserColumnName="min_value" type="xs:double" minOccurs="0" />
+              <xs:element name="avg_value" msprop:Generator_ColumnPropNameInRow="avg_value" msprop:Generator_ColumnPropNameInTable="avg_valueColumn" msprop:Generator_ColumnVarNameInTable="columnavg_value" msprop:Generator_UserColumnName="avg_value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="measured_unit_unit" msprop:Generator_ColumnPropNameInRow="measured_unit_unit" msprop:Generator_ColumnPropNameInTable="measured_unit_unitColumn" msprop:Generator_ColumnVarNameInTable="columnmeasured_unit_unit" msprop:Generator_UserColumnName="measured_unit_unit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="BD_1_1_n.Auht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BD_1_1_n"
+                mc:Ignorable="d"
+        Title="Авторизація" Height="450" Width="800"  MaxHeight="450" MaxWidth="800" WindowStartupLocation="CenterScreen" >
+
+
+
+    <Grid Background="#FFB3DBFD">
+
+
+        <Ellipse Margin="-147,-69,375,-69">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="LightBlue" Offset="0.995"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+        <Ellipse Margin="-70,184,550,-70">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="LightBlue" Offset="0.995"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse Margin="12,10,632,269">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="LightBlue" Offset="0.995"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse Margin="190,123,515,217">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="LightBlue" Offset="0.995"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label Content="Логін:" HorizontalAlignment="Left" Margin="525,97,0,0" VerticalAlignment="Top" Foreground="#FF2933F9" FontSize="22" FontFamily="Cambria"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="525,170,0,0" VerticalAlignment="Top" Foreground="#FF2933F9" FontSize="22" FontFamily="Cambria"/>
+
+        <PasswordBox x:Name="passwordBox1"  HorizontalAlignment="Left" Margin="530,211,0,0" VerticalAlignment="Top" Width="185" Background="#FF6C89E2" Foreground="#FF0E135B" FontSize="22"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="530,138,0,0" TextWrapping="Wrap" Text="roma" VerticalAlignment="Top" Width="185" Foreground="#FF0E135B" Background="#FF6C89E2" FontSize="22"/>
+        <Button Content="Увійти" HorizontalAlignment="Left" Margin="595,277,0,0" VerticalAlignment="Top" Background="#FF2933F9" FontSize="20" FontFamily="Cambria" Width="120" Foreground="#FFB3DBFD" BorderBrush="{x:Null}" Click="Button_Click_1"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="530,276,0,0" VerticalAlignment="Top" Background="#FFD63535" Foreground="#FFFDBBB3" FontSize="20" FontFamily="Gill Sans Ultra Bold" Width="55" BorderBrush="{x:Null}" Click="Button_Click"/>
+
+
+
+
+
+    </Grid>
+</Window>
